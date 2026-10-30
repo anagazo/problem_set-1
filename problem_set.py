@@ -12,10 +12,28 @@ def blastoff():
     for i in range(count, 0, -1):
         print(i)4
     print("blastoff!")
+    
+def candy_shop():
+    # manage list fo candies
+    candies = ["100grands", "twix", "rolos"] 
+    candies.append("kitkat")
+    candies.insert(1, "reeses pieces")
+    candies.sort()
+    candies.remove("kitkat")
+    print(candies)
 
+    user_candies = []
+    for i in range(3):
+        user_candies.append(input("enter your favorite candy; "))
+
+    all_candies = candies + user_candies
+    print(len(all_candies))
+    for candy in all_candies:
+        print(candy)
 def main():
     blue()
     blastoff()
+    candy_shop()
     
 
 

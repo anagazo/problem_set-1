@@ -6,9 +6,17 @@ def blue():
     red = 3
     purple = red * 12
     print(purple)
+    
+def blastoff():
+    count = int(input("pick a number"))
+    for i in range(count, 0, -1):
+        print(i)4
+    print("blastoff!")
 
 def main():
     blue()
+    blastoff()
+    
 
 
 main()
